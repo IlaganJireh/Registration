@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="Database.php" method="post">
+        <h2>Registration Form</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" required><br>
+
+        <label for="middleName">Middle Name:</label>
+        <input type="text" name="middleName" required><br>
+
+        <label for="surname">Surname:</label>
+        <input type="text" name="surname" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label for="sex">Sex:</label>
+        <select name="sex" required><br>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <br><label>Subjects Taken:</label>
+        <input type="checkbox" name="subjects[]" value="math"> Math
+        <input type="checkbox" name="subjects[]" value="english"> English
+        <input type="checkbox" name="subjects[]" value="filipino"> Filipino
+        <input type="checkbox" name="subjects[]" value="science"> Science
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
